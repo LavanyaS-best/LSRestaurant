@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about {
+  min-height: 100vh;
+  width: 100%;
+  padding: 78px 0px;
+  background: linear-gradient(135deg, #191919 60%, #2d0b0b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 2em;
+  box-shadow: 0 8px 32px 0 #f30a0a33;
+  padding: 40px 30px;
+}
+
+.about img {
+  border: 3px solid #f30a0a;
+  box-shadow: 0 0 20px #f30a0a88, 0 0 40px #f30a0a22;
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 2em;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.about img:hover {
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 0 40px #f30a0a, 0 0 80px #f30a0a55;
+}
+
+.about,
+.about-text,
+.about-text h1,
+.about-text h5,
+.about-text p {
+  color: #fff;
+}
+
+.about-text h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 2px 10px #f30a0a55;
+}
+
+.about-text h5 {
+  font-size: 1.5em;
+  margin-bottom: 18px;
+  color: #f30a0a;
+  font-weight: 600;
+}
+
+.about-text h5 span {
+  color: #fff;
+  font-weight: 400;
+}
+
+.about-text p {
+  color: #eee;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.about-text button,
+.about-text .cv {
+  padding: 12px 32px;
+  margin: 10px 10px 0 0;
+  border: none;
+  border-radius: 2em;
+  background: #f30a0a;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  box-shadow: 0 0 10px #f30a0a55;
+  transition: box-shadow 0.2s, transform 0.2s, 0.2s;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about-text button:hover,
+.about-text .cv:hover {
+  background: #ff3c3c;
+  box-shadow: 0 0 30px #f30a0a, 0 0 60px #f30a0a;
+  transform: scale(1.05);
+}
+
+.about-text button:active,
+.about-text .cv:active {
+  box-shadow: 0 0 40px #f30a0a, 0 0 80px #f30a0a;
+  transform: scale(0.97);
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+
+  .about img {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+  }
+}
